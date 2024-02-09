@@ -1,5 +1,5 @@
 # WebDev-Projects
-<h2> Online Voting System + back-end/database manipulation </h2>
+<h3> Online Voting System + back-end/database manipulation </h3>
 
 In the context of my university course "Databases" each team was expected to pick a topic, (or come up with their own) of which
 they would create an SQL Database. The flow of the individual tasks was to first create an entity-relationship diagram & its referential integrity diagram. 
