@@ -1,6 +1,7 @@
 # WebDev-Projects
 <h3> Online Voting System + back-end/database manipulation </h3>
 
+<p style="text-align:center;">---REFER TO SHOWSCASE FOLDER TO VIEW MINI CLIPS OF THE FINAL RESULT---</p>  
 In the context of my university course "Databases" each team was expected to pick a topic, (or come up with their own) of which
 they would create an SQL Database. The flow of the individual tasks was to first create an entity-relationship diagram & its referential integrity diagram. 
 Then using PuTTY, implement the Database based on the final structure and familiarise ourselves with the SQL syntax and capabilities.  
@@ -25,4 +26,4 @@ only put a maximum number of checks on his vote
 * Thanks for Voting Page. We prevent from voting page callback so that nobody can vote multiple times.
 * Results Page
 
-  ---REFER TO SHOWSCASE FOLDER TO VIEW MINI CLIPS OF THE FINAL RESULT---
+
