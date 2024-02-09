@@ -11,9 +11,16 @@ Our topic of choice was an Online Voting System for Greece. For the implementati
 like Grid,Flexbox & Bootstrap. For back-end manipulation we were asked to use PHP. The back-end scripts were basically already given as templates to create
 and structure the website around them, but due to our differentiation of our topic from the suggested ones we went on to create our own. <br>
 <br>
-All of the php scripts are html with internal php except for the results.php which is supposed to run after the end of the elections to calculate <br>
+All of the php scripts are html with internal php except for the results.php which is supposed to run after the end of the elections to calculate
 all needed results<br>
 <br>
 **Important note: Because the creation of the website and the various functionalities of our database was done at the same time, <br>
 these functionalities couldn't be utilised due to lack of time. Nevertheless they are existent and fully functional in the database itself. <br>
 <br>
+In short, we have: 
+* Welcome Page that takes you to login page, or results page (the middle button is unusable)
+* Login page where we authenticate the user. We utilise protection from SQL injection
+* Voting Page where each voter votes based on his province.That means he can vote certain candidates and can <br>
+only put a maximum number of checks on his vote
+* Thanks for Voting Page. We prevent from voting page callback so that nobody can vote multiple times.
+* Results Page
