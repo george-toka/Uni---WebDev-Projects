@@ -11,6 +11,6 @@ Our topic of choice was an Online Voting System for Greece. For the implementati
 like Grid,Flexbox & Bootstrap. For back-end manipulation we were asked to use PHP. The back-end scripts were basically already given as templates to create
 and structure the website around them, but due to our differentiation of our topic from the suggested ones we went on to create our own. <br>
 <br>
-**Important note: Because the creation of the website and the various functionalities of our database was done at the same time <br>
+**Important note: Because the creation of the website and the various functionalities of our database was done at the same time, <br>
 these functionalities couldn't be utilised due to lack of time. Nevertheless they are existent and fully functional in the database itself. <br>
 <br>
