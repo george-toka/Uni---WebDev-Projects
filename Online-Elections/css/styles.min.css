@@ -1,0 +1,661 @@
+@font-face {
+    font-family: IBMPlexSans;
+    font-style: normal;
+    font-weight: 100;
+    src: url(fonts/ibm-plex-sans-v5-greek_latin-100.eot);
+    src: local('IBM Plex Sans Thin'), local('IBMPlexSans-Thin'), url(fonts/ibm-plex-sans-v5-greek_latin-100.eot?#iefix) format('embedded-opentype'), url(fonts/ibm-plex-sans-v5-greek_latin-100.woff2) format('woff2'), url(fonts/ibm-plex-sans-v5-greek_latin-100.woff) format('woff'), url(fonts/ibm-plex-sans-v5-greek_latin-100.ttf) format('truetype'), url(fonts/ibm-plex-sans-v5-greek_latin-100.svg#IBMPlexSans) format('svg')
+}
+
+@font-face {
+    font-family: IBMPlexSans;
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/ibm-plex-sans-v5-greek_latin-regular.eot);
+    src: local('IBM Plex Sans'), local('IBMPlexSans'), url(fonts/ibm-plex-sans-v5-greek_latin-regular.eot?#iefix) format('embedded-opentype'), url(fonts/ibm-plex-sans-v5-greek_latin-regular.woff2) format('woff2'), url(fonts/ibm-plex-sans-v5-greek_latin-regular.woff) format('woff'), url(fonts/ibm-plex-sans-v5-greek_latin-regular.ttf) format('truetype'), url(fonts/ibm-plex-sans-v5-greek_latin-regular.svg#IBMPlexSans) format('svg')
+}
+
+@font-face {
+    font-family: IBMPlexSans;
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/ibm-plex-sans-v5-greek_latin-700.eot);
+    src: local('IBM Plex Sans Bold'), local('IBMPlexSans-Bold'), url(fonts/ibm-plex-sans-v5-greek_latin-700.eot?#iefix) format('embedded-opentype'), url(fonts/ibm-plex-sans-v5-greek_latin-700.woff2) format('woff2'), url(fonts/ibm-plex-sans-v5-greek_latin-700.woff) format('woff'), url(fonts/ibm-plex-sans-v5-greek_latin-700.ttf) format('truetype'), url(fonts/ibm-plex-sans-v5-greek_latin-700.svg#IBMPlexSans) format('svg')
+}
+
+body,
+dd,
+div,
+dl,
+dt,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ol,
+p,
+pre,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%
+}
+
+img {
+    border: 0
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: 400
+}
+
+body {
+    font-family: IBMPlexSans, Arial, Georgia, serif;
+    font-weight: 400;
+    font-size: 1rem;
+    background: #000;
+    overflow-y: scroll;
+    overflow-x: hidden
+}
+
+.ie7 body {
+    overflow: hidden
+}
+
+a {
+    color: #333;
+    text-decoration: none
+}
+
+.container {
+    position: relative;
+    display: table;
+    height: 100%;
+    width: 100%
+}
+
+.clr {
+    clear: both
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%
+}
+
+header .ministry {
+    float: left;
+    padding: 30px
+}
+
+.lang {
+    float: right;
+    padding: 50px 30px
+}
+
+.lang li {
+    float: left;
+    padding-left: 20px;
+    font-weight: 700
+}
+
+.lang li a {
+    color: #fff
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%
+}
+
+footer .slg {
+    float: right;
+    padding: 30px
+}
+
+section {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle
+}
+
+section .title {
+    font-weight: 100;
+    color: #fff;
+    font-size: 5.6rem;
+    letter-spacing: -8px;
+    position: relative;
+    top: 26px;
+    left: 140px
+}
+
+[data-culture=en] section .title {
+    left: 70px
+}
+
+nav {
+    clear: both;
+    display: block;
+    height: 80px
+}
+
+nav a {
+    min-width: 210px;
+    height: auto;
+    float: left;
+    font-size: .85rem;
+    position: relative
+}
+
+nav a span {
+    display: block;
+    background: #fff;
+    margin: 1px 1px 0 0;
+    padding: 10px
+}
+
+nav a span i {
+    transition: border-top-color .5s ease;
+    width: 0;
+    height: 0;
+    border-top: 24px solid #ddd;
+    border-left: 24px solid transparent;
+    position: absolute;
+    right: 5px;
+    top: 4px
+}
+
+nav a span h4 {
+    font-weight: 900;
+    font-size: 1.1rem
+}
+
+nav a.diafaneia span,
+nav a.history span {
+    background: #eee
+}
+
+nav a.diafaneia i,
+nav a.history i {
+    border-top-color: #333
+}
+
+nav a.srt span {
+    background: #00559a;
+    color: #fff
+}
+
+nav a.srt i {
+    border-top-color: #fff
+}
+
+nav a:hover i {
+    border-top-color: #aaa
+}
+
+.mobile {
+    display: none
+}
+
+.slideshow,
+.slideshow:after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0
+}
+
+.slideshow:after {
+    content: '';
+    background: transparent url(../images/pattern.png) repeat top left
+}
+
+.slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 36s linear infinite 0s;
+    -moz-animation: imageAnimation 36s linear infinite 0s;
+    -o-animation: imageAnimation 36s linear infinite 0s;
+    -ms-animation: imageAnimation 36s linear infinite 0s;
+    animation: imageAnimation 36s linear infinite 0s
+}
+
+.slideshow li:nth-child(1) span {
+    background-image: url(../images/1.jpg)
+}
+
+.slideshow li:nth-child(2) span {
+    background-image: url(../images/3.jpg);
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s
+}
+
+.slideshow li:nth-child(3) span {
+    background-image: url(../images/2.jpg);
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s
+}
+
+.slideshow li:nth-child(4) span {
+    background-image: url(../images/4.jpg);
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s
+}
+
+.slideshow li:nth-child(5) span {
+    background-image: url(../images/3.jpg);
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s
+}
+
+.slideshow li:nth-child(6) span {
+    background-image: url(../images/2.jpg);
+    -webkit-animation-delay: 30s;
+    -moz-animation-delay: 30s;
+    -o-animation-delay: 30s;
+    -ms-animation-delay: 30s;
+    animation-delay: 30s
+}
+
+.modal {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: .5s
+}
+
+.modal ul.timeline li img {
+    height: 40px;
+    min-width: 50px;
+    display: block;
+}
+
+.modal a.close {
+    position: fixed;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    font-weight: 100
+}
+
+.modal .content a {
+    display: block
+}
+
+.modal .content a:hover {
+    color: #777
+}
+
+.modal .content strong {
+    font-weight: 700
+}
+
+.modal .content h1 {
+    color: #000;
+    font-weight: 700;
+    font-size: 1.4em
+}
+
+.modal .content {
+    margin-top: 50px;
+    text-align: center
+}
+
+.timeline {
+    border-left: 4px solid #ddd;
+    color: rgba(0, 0, 0, .8);
+    margin: 50px auto;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 40px;
+    list-style: none;
+    text-align: left;
+    max-width: 0%
+}
+
+.timeline h1 {
+    font-size: 1.4em
+}
+
+.timeline h2,
+.timeline h3 {
+    font-weight: 700;
+    font-size: 1.2em
+}
+
+.timeline .event {
+    border-bottom: 1px dashed rgba(255, 255, 255, .1);
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+    position: relative
+}
+
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none
+}
+
+.timeline .event:after,
+.timeline .event:before {
+    position: absolute;
+    display: block;
+    top: 0
+}
+
+.timeline h3,
+.timeline p {
+    width: 350px
+}
+
+.timeline p {
+    font-size: .9rem;
+    line-height: 1.1
+}
+
+.timeline .event:before {
+    left: -200.5px;
+    color: rgba(0, 0, 0, 1);
+    content: attr(data-date);
+    text-align: right;
+    font-size: .9em;
+    min-width: 120px
+}
+
+.timeline .event:after {
+    box-shadow: 0 0 0 4px #999;
+    left: -47.85px;
+    background: #fff;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+    top: 5px
+}
+
+@-webkit-keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        -webkit-animation-timing-function: ease-in
+    }
+
+    8% {
+        opacity: 1;
+        -webkit-transform: scale(1.05);
+        -webkit-animation-timing-function: ease-out
+    }
+
+    17% {
+        opacity: 1;
+        -webkit-transform: scale(1.1)
+    }
+
+    25% {
+        opacity: 0;
+        -webkit-transform: scale(1.1)
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-moz-keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        -moz-animation-timing-function: ease-in
+    }
+
+    8% {
+        opacity: 1;
+        -moz-transform: scale(1.05);
+        -moz-animation-timing-function: ease-out
+    }
+
+    17% {
+        opacity: 1;
+        -moz-transform: scale(1.1)
+    }
+
+    25% {
+        opacity: 0;
+        -moz-transform: scale(1.1)
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-o-keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        -o-animation-timing-function: ease-in
+    }
+
+    8% {
+        opacity: 1;
+        -o-transform: scale(1.05);
+        -o-animation-timing-function: ease-out
+    }
+
+    17% {
+        opacity: 1;
+        -o-transform: scale(1.1)
+    }
+
+    25% {
+        opacity: 0;
+        -o-transform: scale(1.1)
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-ms-keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        -ms-animation-timing-function: ease-in
+    }
+
+    8% {
+        opacity: 1;
+        -ms-transform: scale(1.05);
+        -ms-animation-timing-function: ease-out
+    }
+
+    17% {
+        opacity: 1;
+        -ms-transform: scale(1.1)
+    }
+
+    25% {
+        opacity: 0;
+        -ms-transform: scale(1.1)
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in
+    }
+
+    8% {
+        opacity: 1;
+        transform: scale(1.05);
+        animation-timing-function: ease-out
+    }
+
+    17% {
+        opacity: 1;
+        transform: scale(1.1)
+    }
+
+    25% {
+        opacity: 0;
+        transform: scale(1.1)
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@media screen and (max-width:1140px) {
+    .slideshow li div h3 {
+        font-size: 100px
+    }
+}
+
+@media screen and (max-width:868px) {
+    section .title {
+        left: 150px;
+        top: 23px;
+        font-size: 5rem
+    }
+}
+
+@media (min-width:639px) and (max-width:840px) {
+    nav a {
+        min-width: 160px;
+        height: auto;
+        float: left;
+        font-size: .65rem;
+        position: relative;
+        width: 160px;
+    }
+
+    nav {
+        height: 70px;
+    }
+
+}
+
+
+@media screen and (max-width:640px) {
+    
+    .modal .content h1 {
+        font-size: 1.2em
+    }
+
+    .modal .content {
+        margin-top: 100px;
+        text-align: center
+    }
+
+    footer,
+    header,
+    section {
+        left: auto;
+        bottom: auto;
+        top: auto;
+        position: static;
+        display: block;
+        width: 100%;
+        height: auto
+    }
+
+    footer {
+        background: #000e4b
+    }
+
+    .container {
+        display: block
+    }
+
+    header {
+        text-align: center
+    }
+
+    .lang {
+        display: none
+    }
+
+    .lang.mobile {
+        float: left;
+        padding: 22px
+    }
+
+    footer .slg {
+        padding: 20px
+    }
+
+    .mobile {
+        display: block
+    }
+
+    [data-culture=en] section .title,
+    section .title {
+        text-align: center;
+        left: auto;
+        top: auto;
+        padding: 0 20px 20px;
+        font-size: 4rem
+    }
+
+    nav a {
+        width: 100%;
+        min-width: auto
+    }
+}
