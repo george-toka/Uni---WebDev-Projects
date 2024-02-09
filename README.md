@@ -24,3 +24,5 @@ In short, we have:
 only put a maximum number of checks on his vote
 * Thanks for Voting Page. We prevent from voting page callback so that nobody can vote multiple times.
 * Results Page
+
+  ---REFER TO SHOWSCASE FOLDER TO VIEW MINI CLIPS OF THE FINAL RESULT---
