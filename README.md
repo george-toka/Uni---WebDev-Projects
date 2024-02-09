@@ -1,7 +1,7 @@
 # WebDev-Projects
 <h3> Online Voting System + back-end/database manipulation </h3>
 
-<p align="enter">---REFER TO SHOWSCASE FOLDER TO VIEW MINI CLIPS OF THE FINAL RESULT---</p>  
+<p align="center">---REFER TO SHOWSCASE FOLDER TO VIEW MINI CLIPS OF THE FINAL RESULT---</p>  
 In the context of my university course "Databases" each team was expected to pick a topic, (or come up with their own) of which
 they would create an SQL Database. The flow of the individual tasks was to first create an entity-relationship diagram & its referential integrity diagram. 
 Then using PuTTY, implement the Database based on the final structure and familiarise ourselves with the SQL syntax and capabilities.  
